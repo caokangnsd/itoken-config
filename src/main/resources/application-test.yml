@@ -11,11 +11,11 @@ spring:
           username: caokangnsd
           password: shurumima93,.
   zipkin:
-    base-url: http://47.114.63.61:9411
+    base-url: http://localhost:9411
   boot:
     admin:
       client:
-        url: http://47.114.63.61:8084
+        url: http://localhost:8084
 
 server:
   port: 8888
@@ -23,4 +23,4 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://47.114.63.61:8761/eureka/
+      defaultZone: http://localhost:8761/eureka/

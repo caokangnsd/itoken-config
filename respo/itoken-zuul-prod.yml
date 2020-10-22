@@ -2,11 +2,11 @@ spring:
   application:
     name: itoken-zuul
   zipkin:
-    base-url: http://localhost:9411
+    base-url: http://47.114.63.61:9411
   boot:
     admin:
       client:
-        url: http://localhost:8084
+        url: http://47.114.63.61:8084
 
 server:
   port: 8769
@@ -23,7 +23,7 @@ zuul:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://47.114.63.61:8761/eureka/
 
 management:
   endpoint:
