@@ -18,7 +18,7 @@ spring:
         url: http://47.114.63.61:8084
 
 server:
-  port: 8899
+  port: 8888
 
 eureka:
   client:
