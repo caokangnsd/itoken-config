@@ -17,7 +17,7 @@ eureka:
   client:
     register-with-eureka: false
     fetch-registry: false
-    service-url:
+    serviceUrl:
       defaultZone: http://47.114.63.61:8761/eureka/,http://47.114.63.61:8861/eureka/,http://47.114.63.61:8961/eureka/
 
 management:
