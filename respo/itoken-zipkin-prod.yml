@@ -10,6 +10,14 @@ server:
   port: 9411
 
 management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        # 注意：此处在视频里是 include: ["health", "info"] 但已无效了，请修改
+        include: health,info
   metrics:
     web:
       server:
@@ -18,4 +26,4 @@ management:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://47.114.63.61:8761/eureka/
+      defaultZone: http://47.114.63.61:8761/eureka/,http://47.114.63.61:8861/eureka/,http://47.114.63.61:8961/eureka/
