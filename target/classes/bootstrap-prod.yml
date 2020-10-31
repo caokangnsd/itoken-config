@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: itoken-config
+  cloud:
+    config:
+      label: master
+      server:
+        git:
+          uri: https://github.com/caokangnsd/itoken-config.git
+          search-paths: respo
+          username: caokangnsd
+          password: shurumima93,.
+  zipkin:
+    base-url: http://47.114.63.61:9411
+  boot:
+    admin:
+      client:
+        url: http://47.114.63.61:8084
+
+server:
+  port: 8888
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://47.114.63.61:8761/eureka/
