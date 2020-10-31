@@ -11,6 +11,6 @@ RUN wget https://github.com/jwilder/dockerize/releases/download/$DOCKERIZE_VERSI
 RUN mkdir /app
 
 COPY itoken-eureka-$APP_VERSION.jar /app/app.jar
-ENTRYPOINT ["dockerize", "-timeout", "5m", "-wait", "tcp://192.168.75.128:8888", "java", "-Djava.security.egd=file:/dev/./urandom", "-jar", "/app/app.jar", "--spring.profiles.active=prod"]
+ENTRYPOINT ["dockerize", "-timeout", "5m", "-wait", "http://192.168.75.128:8888", "java", "-Djava.security.egd=file:/dev/./urandom", "-jar", "/app/app.jar", "--spring.profiles.active=prod"]
 
-EXPOSE 8761
+EXPOSE 8888
