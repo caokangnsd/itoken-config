@@ -10,8 +10,8 @@ spring:
   datasource:
     druid:
       url: jdbc:mysql://rm-bp15sbgi08ei967v97o.mysql.rds.aliyuncs.com:3306/itoken-service-admin?useUnicode=true&characterEncoding=utf-8&useSSL=false
-      username: root
-      password: 123456
+      username: nsd
+      password: caokang@2020
       initial-size: 1
       min-idle: 1
       max-active: 20
